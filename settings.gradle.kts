@@ -16,3 +16,4 @@ dependencyResolutionManagement {
 rootProject.name = "SnoreTracker"
 include(":app")
 include(":core")
+include(":features:feature-main")
