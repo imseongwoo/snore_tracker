@@ -15,4 +15,4 @@ dependencyResolutionManagement {
 
 rootProject.name = "SnoreTracker"
 include(":app")
- 
+include(":core")
