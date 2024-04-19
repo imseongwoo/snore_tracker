@@ -1,4 +1,4 @@
-package com.example.snoretracker.ui.theme
+package com.ownsnoretracker.app.ui.theme
 
 import androidx.compose.ui.graphics.Color
 

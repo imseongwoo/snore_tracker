@@ -1,4 +1,4 @@
-package com.example.snoretracker
+package com.ownsnoretracker.app
 
 import android.os.Bundle
 import androidx.activity.ComponentActivity
@@ -10,7 +10,7 @@ import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
-import com.example.snoretracker.ui.theme.SnoreTrackerTheme
+import com.ownsnoretracker.app.ui.theme.SnoreTrackerTheme
 
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {

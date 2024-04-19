@@ -1,4 +1,4 @@
-package com.example.feature_main
+package com.ownsnoretracker.app
 
 import org.junit.Test
 

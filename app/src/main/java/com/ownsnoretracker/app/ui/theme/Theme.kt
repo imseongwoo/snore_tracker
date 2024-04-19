@@ -1,4 +1,4 @@
-package com.example.snoretracker.ui.theme
+package com.ownsnoretracker.app.ui.theme
 
 import android.app.Activity
 import android.os.Build

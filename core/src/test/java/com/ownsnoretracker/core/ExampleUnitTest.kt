@@ -1,4 +1,4 @@
-package com.example.snoretracker
+package com.ownsnoretracker.core
 
 import org.junit.Test
 

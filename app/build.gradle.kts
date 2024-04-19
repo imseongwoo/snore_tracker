@@ -4,11 +4,11 @@ plugins {
 }
 
 android {
-    namespace = "com.example.snoretracker"
+    namespace = "com.ownsnoretracker.app"
     compileSdk = 34
 
     defaultConfig {
-        applicationId = "com.example.snoretracker"
+        applicationId = "com.ownsnoretracker.app"
         minSdk = 24
         targetSdk = 33
         versionCode = 1
