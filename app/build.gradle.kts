@@ -12,4 +12,5 @@ dependencies {
     implementation(project(":core"))
     implementation(project(":features:feature-main"))
     implementation(project(":features:feature-navigation"))
+    implementation(project(":features:feature-graph"))
 }
