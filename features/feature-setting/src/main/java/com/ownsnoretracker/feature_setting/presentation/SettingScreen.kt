@@ -1,4 +1,4 @@
-package com.ownsnoretracker.feature_graph.presentation
+package com.ownsnoretracker.feature_setting.presentation
 
 import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.Column
@@ -10,13 +10,13 @@ import androidx.navigation.NavHostController
 import com.ownsnoretracker.ui_components.values.mainTheme
 
 @Composable
-fun GraphScreen(
-    navHostController: NavHostController,
+fun SettingScreen(
+    navHostController: NavHostController
 ) {
     Column(
         Modifier
             .fillMaxSize()
             .background(mainTheme)) {
-        Text(text = "graph")
+        Text(text = "setting")
     }
 }

@@ -8,6 +8,7 @@ import androidx.navigation.compose.composable
 import com.ownsnoretracker.feature_graph.presentation.GraphScreen
 import com.ownsnoretracker.feature_main.presentation.MainHomeScreen
 import com.ownsnoretracker.feature_navigation.Route
+import com.ownsnoretracker.feature_setting.presentation.SettingScreen
 
 @Composable
 fun SnoreTrackerAppNavigator(
@@ -25,6 +26,11 @@ fun SnoreTrackerAppNavigator(
         composable(Route.GRAPH) {
             onNavigate(Route.GRAPH)
             GraphScreen(navHostController = navHostController)
+        }
+
+        composable(Route.SETTINGS) {
+            onNavigate(Route.SETTINGS)
+            SettingScreen(navHostController = navHostController)
         }
     }
 }
