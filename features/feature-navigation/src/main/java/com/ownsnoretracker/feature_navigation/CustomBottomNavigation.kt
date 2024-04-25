@@ -23,6 +23,7 @@ import androidx.navigation.NavHostController
 import androidx.navigation.compose.currentBackStackEntryAsState
 import androidx.navigation.compose.rememberNavController
 import com.ownsnoretracker.ui_components.values.mainTheme
+import com.ownsnoretracker.ui_components.values.yellow
 
 @Composable
 fun CustomBottomNavigation(
@@ -62,7 +63,7 @@ private fun NavItem(item: BottomNavItem, selected: Boolean, onItemClick: (Bottom
             Icon(
                 imageVector = item.icon,
                 contentDescription = item.configuration,
-                tint = Color.Black
+                tint = yellow
             )
         } else {
             Icon(

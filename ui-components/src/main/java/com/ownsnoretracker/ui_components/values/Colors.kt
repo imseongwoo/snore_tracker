@@ -3,7 +3,7 @@ package com.ownsnoretracker.ui_components.values
 import androidx.compose.ui.graphics.Brush
 import androidx.compose.ui.graphics.Color
 
-val mainTheme = Color(0xFF232A39)
+val mainTheme = Color(0xFF141414)
 val transparentBrush = Brush.linearGradient(
     colors = listOf(Color.Transparent, Color.Transparent)
 )
