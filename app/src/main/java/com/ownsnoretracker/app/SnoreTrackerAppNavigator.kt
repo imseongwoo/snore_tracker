@@ -1,5 +1,7 @@
 package com.ownsnoretracker.app
 
+import androidx.compose.animation.EnterTransition
+import androidx.compose.animation.ExitTransition
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.State
 import androidx.navigation.NavHostController
@@ -17,7 +19,14 @@ fun SnoreTrackerAppNavigator(
     onNavigate: (String) -> Unit
 ) {
 
-    NavHost(navController = navHostController, startDestination = Route.HOME) {
+    NavHost(
+        navController = navHostController,
+        startDestination = Route.HOME,
+        enterTransition = { EnterTransition.None },
+        exitTransition = { ExitTransition.None },
+        popEnterTransition = { EnterTransition.None },
+        popExitTransition = { ExitTransition.None },
+    ) {
         composable(Route.HOME) {
             onNavigate(Route.HOME)
             MainHomeScreen(navHostController)
