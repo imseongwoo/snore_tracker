@@ -24,4 +24,6 @@ jobs:
       run: chmod +x gradlew
     - name: Clean Bulid
       run: ./gradlew clean
+    - name: Check ktlint format
+      run: ./gradlew ktlintCheck
    
