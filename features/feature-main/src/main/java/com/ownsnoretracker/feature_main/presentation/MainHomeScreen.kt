@@ -72,6 +72,9 @@ fun PulsingImage(
     Image(
         painter = painterResource(id = R.drawable.moon),
         contentDescription = "CheckIcon",
-        modifier = Modifier.size(imageSize).clip(CircleShape).clickable { onAnimate(true) }
+        modifier = Modifier
+            .size(imageSize)
+            .clip(CircleShape)
+            .clickable { onAnimate(true) }
     )
 }
