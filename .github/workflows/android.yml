@@ -27,22 +27,11 @@ jobs:
 
     - name: Run ktlint with reviewdog
 
-  uses: ScaCap/action-ktlint@v1.8.1
-  with:
-    # GITHUB_TOKEN
-    github_token: ${{secrets.TOKEN}
-    # Report level for reviewdog [info,warning,error]
-    level: # optional, default is error
-    # Reporter of reviewdog command [github-pr-check,github-check,github-pr-review].
-Default is github-pr-check.
+      uses: ScaCap/action-ktlint@v1.8.1
+      with:
+        # GITHUB_TOKEN
+        github_token: ${{secrets.TOKEN}
 
-    reporter: # optional, default is github-pr-check
-    # Filtering mode for the reviewdog command [added,diff_context,file,nofilter].
-Default is added.
-
-    filter_mode: # optional, default is added
-    # Exit code for reviewdog when errors are found [true,false]
-Default is `false`.
 
 
           
