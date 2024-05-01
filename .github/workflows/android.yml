@@ -11,18 +11,7 @@ on:
     types: [opened, synchronize]
 
 jobs:
-  code-review:
-      runs-on: ubuntu-latest
-      steps:
-        - uses: anc95/ChatGPT-CodeReview@main
-          env:
-            GITHUB_TOKEN: ${{ secrets.TOKEN }}
-            OPENAI_API_KEY: ${{ secrets.OPEN_API_KEY }}
-            LANGUAGE: Korean
-            MODEL: gpt-3.5-turbo
-
   build:
-
     runs-on: ubuntu-latest
 
     steps:
@@ -46,6 +35,15 @@ jobs:
         # GITHUB_TOKEN
         github_token: ${{secrets.TOKEN}}
         reporter: github-pr-review
+
+    - name: GPT PR Reviewer
+      uses: galadrimteam/gpt-pr-review@1.3.3
+      with:
+        # Github token
+        github-token: ${{ secrets.TOKEN }}
+        # OpenAI GPT API key
+        gpt-api-key: ${{ secrets.OPEN_API_KEY }}
+          
 
 
 
