@@ -28,7 +28,6 @@ jobs:
     - name: Clean Bulid
       run: ./gradlew clean
 
-    - name: Run ktlint with reviewdog
 
     - name: GPT PR Reviewer
       uses: galadrimteam/gpt-pr-review@1.3.3
